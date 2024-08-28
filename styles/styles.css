@@ -1,0 +1,378 @@
+:root{
+    --background-color:#f2f9ff;
+    --text-color-primary:#0A3871;
+    --text-color-secondary:#000000;
+    --text-color-tertiary:#8c8d8f;
+    --text-color-quaternary:#FFFFFF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-color: var(--background-color);
+}
+
+header{
+    display: flex;
+    color: var(--text-color-primary);
+    margin-left: 2.5rem;    
+}
+
+header h1{
+    font-size: 7.5rem; 
+}
+
+header h2{
+    padding-left: 2.5rem;
+    padding-top: 1.5rem;
+    font-size: 5.5rem;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    margin:2.7rem;
+}
+
+footer{
+    height: 4.5rem;
+    background-color: var(--text-color-primary);
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--text-color-quaternary);
+    padding: 1.5rem;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--text-color-quaternary);
+}
+
+@media (min-width: 360px) {
+    
+    header h1{
+        font-size: 7.5rem; 
+    }
+    
+    header h2{
+        padding-left: 2.5rem;
+        padding-top: 3.5rem;
+        font-size: 3.5rem;
+    }
+    
+    main{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 2rem;
+    }
+    
+    .text-area{
+        background-color: var(--background-color);
+        color: var(--text-color-primary);
+        font-size: 2.5rem;
+        height: 28.3rem;
+        width: 34rem;
+        border: none;
+        resize: none;
+    }
+    
+    .text-area::placeholder{
+        color: var(--text-color-primary);
+    }
+    
+    .text-area:focus{
+        outline: none;
+    }
+    
+    .info{
+        display: flex;
+        color: var(--text-color-tertiary);
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .info p{
+        padding-left: .5rem;
+    }
+
+    .container-buttons{
+        display: flex;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+        align-items:center;
+        justify-content: center;
+    }
+    
+    .btn-encriptar, .btn-desencriptar, .btn-copy{
+        width: 25rem;
+        height: 6rem;
+        margin-bottom: 1rem;
+        font-size: 2.5rem;
+        border-radius: 1.5rem;
+        cursor: pointer;
+    }
+    
+    .btn-encriptar {
+        background-color: var(--text-color-primary);
+        color: var(--text-color-quaternary);
+        border: 1px solid var(--text-color-primary);
+    }
+    
+    .btn-desencriptarm, .btn-copy{
+        background-color: var(--text-color-quaternary);
+        color: var(--text-color-primary);
+        border: 1px solid var(--text-color-primary);
+    }
+    
+    .btn-copy{
+        display: none;
+    }
+    
+    .btn-encriptar:hover{
+        background-color: var(--text-color-secondary);
+    }
+    
+    .btn-desencriptar:hover{
+        background-color: var(--text-color-tertiary);
+    }
+    
+    .btn-copy:hover{
+        background-color: var(--text-color-tertiary);
+    }
+    
+    .container-message{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+        text-align: center;
+        width: 50rem;
+        height: 20rem;
+        background-color: #FFFFFF;
+        box-shadow: #8c8d8f 0.5rem 0.5rem 0.5rem;
+        border-radius: 5rem;
+    }
+    
+    img{
+        display: none;
+    }
+    
+    .container-message h2{
+        color: var(--text-color-secondary);
+        font-size: 2.5rem;
+        padding-bottom: .5rem;
+    }
+    
+    .container-message h3{
+        color: var(--text-color-tertiary);
+        font-size: 1.5rem;
+        padding-bottom: .5rem;
+    }
+    
+}
+
+
+@media (min-width: 768px) {
+    
+    .text-area{
+        background-color: var(--background-color);
+        color: var(--text-color-primary);
+        font-size: 2.5rem;
+        height: 55rem;
+        width: 71rem;
+        border: none;
+        resize: none;
+    }
+    
+    .text-area::placeholder{
+        color: var(--text-color-primary);
+    }
+    
+    .text-area:focus{
+        outline: none;
+    }
+    
+    .info{
+        display: flex;
+        color: var(--text-color-tertiary);
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .info p{
+        padding-left: .5rem;
+    }
+    
+    .btn-encriptar, .btn-desencriptar, .btn-copy{
+        width: 25rem;
+        height: 6rem;
+        margin-bottom: 1rem;
+        font-size: 2.5rem;
+        border-radius: 1.5rem;
+        cursor: pointer;
+    }
+    
+    .btn-encriptar {
+        background-color: var(--text-color-primary);
+        color: var(--text-color-quaternary);
+        border: 1px solid var(--text-color-primary);
+    }
+    
+    .btn-desencriptarm, .btn-copy{
+        background-color: var(--text-color-quaternary);
+        color: var(--text-color-primary);
+        border: 1px solid var(--text-color-primary);
+    }
+    
+    .btn-copy{
+        display: none;
+    }
+    
+    .btn-encriptar:hover{
+        background-color: var(--text-color-secondary);
+    }
+    
+    .btn-desencriptar:hover{
+        background-color: var(--text-color-tertiary);
+    }
+    
+    .btn-copy:hover{
+        background-color: var(--text-color-tertiary);
+    }
+    
+    .container-message{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+        text-align: center;
+        background-color: #FFFFFF;
+        box-shadow: #8c8d8f 0.5rem 0.5rem 0.5rem;
+        border-radius: 5rem;
+    }
+    
+    img{
+        display: none;
+    }
+    
+    .container-message h2{
+        color: var(--text-color-secondary);
+        font-size: 2.5rem;
+        padding-bottom: .5rem;
+    }
+    
+    .container-message h3{
+        color: var(--text-color-tertiary);
+        font-size: 1.5rem;
+        padding-bottom: .5rem;
+    }
+}
+
+
+@media (min-width: 1024px) {
+.text-area{
+    background-color: var(--background-color);
+    color: var(--text-color-primary);
+    font-size: 2.5rem;
+    height: 45.4rem;
+    width: 80rem;
+    border: none;
+    resize: none;
+}
+
+.text-area::placeholder{
+    color: var(--text-color-primary);
+}
+
+.text-area:focus{
+    outline: none;
+}
+
+.info{
+    display: flex;
+    color: var(--text-color-tertiary);
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.info p{
+    padding-left: .5rem;
+}
+
+.btn-encriptar, .btn-desencriptar, .btn-copy{
+    width: 25rem;
+    height: 6rem;
+    font-size: 2.5rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+}
+
+.btn-encriptar {
+    background-color: var(--text-color-primary);
+    color: var(--text-color-quaternary);
+    border: 1px solid var(--text-color-primary);
+    margin-right: 1.5rem;
+}
+
+.btn-desencriptarm, .btn-copy{
+    background-color: var(--text-color-quaternary);
+    color: var(--text-color-primary);
+    border: 1px solid var(--text-color-primary);
+}
+
+.btn-copy{
+    display: none;
+}
+
+.btn-encriptar:hover{
+    background-color: var(--text-color-secondary);
+}
+
+.btn-desencriptar:hover{
+    background-color: var(--text-color-tertiary);
+}
+
+.btn-copy:hover{
+    background-color: var(--text-color-tertiary);
+}
+
+.container-message{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    width: 50rem;
+    height: 54rem;
+    background-color: #FFFFFF;
+    border-radius: 5rem;
+}
+
+img{
+    width: 80%;
+    height: 70%;
+    display: block;
+}
+
+.container-message h2{
+    color: var(--text-color-secondary);
+    font-size: 2.5rem;
+    padding-bottom: .5rem;
+}
+
+.container-message h3{
+    color: var(--text-color-tertiary);
+    font-size: 1.5rem;
+    padding-bottom: .5rem;
+}
+}
